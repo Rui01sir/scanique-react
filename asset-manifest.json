@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/scanique-react/static/css/main.c8c69e48.css",
+    "main.js": "/scanique-react/static/js/main.76fe296c.js",
+    "static/js/453.ed3810f9.chunk.js": "/scanique-react/static/js/453.ed3810f9.chunk.js",
+    "static/media/videoBg.mp4": "/scanique-react/static/media/videoBg.fbb54ca91b3491dc81f4.mp4",
+    "index.html": "/scanique-react/index.html",
+    "static/media/rectangle-2.svg": "/scanique-react/static/media/rectangle-2.631b1880cb123a3ffe18.svg",
+    "static/media/rectangle-1.svg": "/scanique-react/static/media/rectangle-1.49e0f79d1df4694cad77.svg",
+    "main.c8c69e48.css.map": "/scanique-react/static/css/main.c8c69e48.css.map",
+    "main.76fe296c.js.map": "/scanique-react/static/js/main.76fe296c.js.map",
+    "453.ed3810f9.chunk.js.map": "/scanique-react/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8c69e48.css",
+    "static/js/main.76fe296c.js"
+  ]
+}
