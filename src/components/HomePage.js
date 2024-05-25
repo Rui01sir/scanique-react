@@ -6,13 +6,16 @@ function HomePage() {
   const videoRef = useRef(null);
 
   useEffect(() => {
+    // 自動播放視頻
     if (videoRef.current) {
       videoRef.current.play().catch(error => {
         console.error('Auto-play failed:', error);
       });
     }
   }, [videoRef]);
+
   useEffect(() => {
+    // 自動輪播牆面
     var slideIndex = 0;
     const carousel = () => {
       var slides = document.querySelectorAll(".mySlides");
@@ -22,7 +25,7 @@ function HomePage() {
       }
       
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i.style.display = "none"];
       }
       slideIndex++;
       if (slideIndex > slides.length) {
@@ -60,9 +63,6 @@ function HomePage() {
         <h2>整合用戶管理、保固、分析於一身</h2>
         <div className="icon-large">
           <video src={videoBg} autoPlay loop muted/>
-          {/* <video ref={videoRef} controls loop>
-            <source src={`${process.env.PUBLIC_URL}./video/video0722.mp4" type="video/mp4" />
-          </video> */}
         </div>
         <p>
           Scanique的平台整合了用戶管理、保固服務和深度數據分析功能，使廠商可以在一個統一的系統中管理全部流程。從客戶資料管理到保固期追蹤，再到消費行為分析，Scanique提供全面的解決方案，幫助企業提升運營效率，同時深化對市場和消費者的洞察。
@@ -71,18 +71,18 @@ function HomePage() {
 
         {/* background */}
         {/* <div className="rectangle-1">
-          <img src={`${process.env.PUBLIC_URL}./img/rectangle-1.svg" alt="rectangle-1"></img>
+          <img src={`${process.env.PUBLIC_URL}/img/rectangle-1.svg`} alt="rectangle-1"></img>
         </div> */}
 
         {/* text-content-1 */}
         <div className="rectangle-2">
-          {/* <img src={`${process.env.PUBLIC_URL}./img/rectangle-2.svg" alt="rectangle-2"></img> */}
+          {/* <img src={`${process.env.PUBLIC_URL}/img/rectangle-2.svg`} alt="rectangle-2"></img> */}
         <div className="box-2">
           <div className="box-3">
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-01.svg`}
+                  src={`${process.env.PUBLIC_URL}/img/icon-small/icon-small-01.svg`}
                   alt="icon-small-01.svg"
                 ></img>
               </div>
@@ -97,7 +97,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src={`${process.env.PUBLIC_URL}./img/small-banner-01.svg`}
+            src={`${process.env.PUBLIC_URL}/img/small-banner-01.svg`}
             alt="small-banner-01"
           ></img>
         </div>
@@ -107,8 +107,8 @@ function HomePage() {
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-02.svg`}
-                  alt="icon-small-02.svg"
+                  src={`${process.env.PUBLIC_URL}/img/icon-small/icon-small-02.svg`}
+                  alt="icon-small-02.svg`}
                 ></img>
               </div>
               <h4>正品保證</h4>
@@ -122,7 +122,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src={`${process.env.PUBLIC_URL}./img/small-banner-02-01.svg`}
+            src={`${process.env.PUBLIC_URL}/img/small-banner-02-01.svg`}
             alt="small-banner-02"
           ></img>
         </div>
@@ -132,8 +132,8 @@ function HomePage() {
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-03.svg`}
-                  alt="icon-small-02.svg"
+                  src={`${process.env.PUBLIC_URL}/img/icon-small/icon-small-03.svg`}
+                  alt="icon-small-02.svg`}
                 ></img>
               </div>
               <h4>雙向資訊流通</h4>
@@ -147,7 +147,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src={`${process.env.PUBLIC_URL}./img/small-banner-03.svg`}
+            src={`${process.env.PUBLIC_URL}/img/small-banner-03.svg`}
             alt="small-banner-02"
           ></img>
         </div>
@@ -157,8 +157,8 @@ function HomePage() {
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-04.svg`}
-                  alt="icon-small-02.svg"
+                  src={`${process.env.PUBLIC_URL}/img/icon-small/icon-small-04.svg`}
+                  alt="icon-small-02.svg`}
                 ></img>
               </div>
               <h4>產品綁定</h4>
@@ -172,7 +172,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src={`${process.env.PUBLIC_URL}./img/small-banner-04-01.svg`}
+            src={`${process.env.PUBLIC_URL}/img/small-banner-04-01.svg`}
             alt="small-banner-02"
           ></img>
         </div>
@@ -190,7 +190,7 @@ function HomePage() {
           <div className="box-9">
             <img
               className="img3 "
-              src={`${process.env.PUBLIC_URL}./img/small-banner-06.svg`}
+              src={`${process.env.PUBLIC_URL}/img/small-banner-06.svg`}
               alt="small-banner-06"
             ></img>
             <div className="text-3">
@@ -220,7 +220,7 @@ function HomePage() {
           <div className="box-10">
             <img
               className="img4"
-              src={`${process.env.PUBLIC_URL}./img/small-banner-05.svg`}
+              src={`${process.env.PUBLIC_URL}/img/small-banner-05.svg`}
               alt="small-banner-05"
             ></img>
             <div className="text-6">
@@ -284,7 +284,7 @@ function HomePage() {
               </div>
             </div>
             <img
-              src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-05.svg`}
+              src={`${process.env.PUBLIC_URL}/img/icon-small/icon-small-05.svg`}
               alt="icon-small-05"
             ></img>
             <div className="box-13">
@@ -303,7 +303,7 @@ function HomePage() {
               </div>
             </div>
             <img
-              src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-05.svg`}
+              src={`${process.env.PUBLIC_URL}/img/icon-small/icon-small-05.svg`}
               alt="icon-small-05"
             ></img>
             <div className="box-13">
