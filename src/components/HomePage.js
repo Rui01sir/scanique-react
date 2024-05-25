@@ -1,21 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom"; 
-import videoBg from '../assets/videoBg.mp4'
+import videoBg from '../assets/videoBg.mp4';
 
 function HomePage() {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    // 自動播放視頻
     if (videoRef.current) {
       videoRef.current.play().catch(error => {
         console.error('Auto-play failed:', error);
       });
     }
-  }, [videoRef]); // 只有當 videoRef 改變時執行
-
+  }, [videoRef]);
   useEffect(() => {
-    // 自動輪播牆面
     var slideIndex = 0;
     const carousel = () => {
       var slides = document.querySelectorAll(".mySlides");
@@ -45,16 +42,16 @@ function HomePage() {
       {/* banner */}
       <div className="rectangle-1">
       <div className="mySlides fade banner2">
-        <img src="./img/banner1.svg" alt="banner1"></img>
-        <img src="./img/banner1-1.svg" alt="banner1-1"></img>
+        <img src={`${process.env.PUBLIC_URL}/img/banner1.svg`} alt="banner1"></img>
+        <img src={`${process.env.PUBLIC_URL}/img/banner1-1.svg`} alt="banner1-1"></img>
       </div>
       <div className="mySlides fade banner2">
-        <img src="./img/banner2.svg" alt="banner2"></img>
-        <img src="./img/banner1-2.svg" alt="banner1-2"></img>
+        <img src={`${process.env.PUBLIC_URL}/img/banner2.svg`} alt="banner2"></img>
+        <img src={`${process.env.PUBLIC_URL}/img/banner1-2.svg`} alt="banner1-2"></img>
       </div>
       <div className="mySlides fade banner2">
-        <img src="./img/banner3.svg" alt="banner3"></img>
-        <img src="./img/banner1-3.svg" alt="banner1-3"></img>
+        <img src={`${process.env.PUBLIC_URL}/img/banner3.svg`} alt="banner3"></img>
+        <img src={`${process.env.PUBLIC_URL}/img/banner1-3.svg`} alt="banner1-3"></img>
       </div>
       </div>
 
@@ -64,7 +61,7 @@ function HomePage() {
         <div className="icon-large">
           <video src={videoBg} autoPlay loop muted/>
           {/* <video ref={videoRef} controls loop>
-            <source src="./video/video0722.mp4" type="video/mp4" />
+            <source src={`${process.env.PUBLIC_URL}./video/video0722.mp4" type="video/mp4" />
           </video> */}
         </div>
         <p>
@@ -74,18 +71,18 @@ function HomePage() {
 
         {/* background */}
         {/* <div className="rectangle-1">
-          <img src="./img/rectangle-1.svg" alt="rectangle-1"></img>
+          <img src={`${process.env.PUBLIC_URL}./img/rectangle-1.svg" alt="rectangle-1"></img>
         </div> */}
 
         {/* text-content-1 */}
         <div className="rectangle-2">
-          {/* <img src="./img/rectangle-2.svg" alt="rectangle-2"></img> */}
+          {/* <img src={`${process.env.PUBLIC_URL}./img/rectangle-2.svg" alt="rectangle-2"></img> */}
         <div className="box-2">
           <div className="box-3">
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src="./img/icon-small/icon-small-01.svg"
+                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-01.svg`}
                   alt="icon-small-01.svg"
                 ></img>
               </div>
@@ -100,7 +97,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src="./img/small-banner-01.svg"
+            src={`${process.env.PUBLIC_URL}./img/small-banner-01.svg`}
             alt="small-banner-01"
           ></img>
         </div>
@@ -110,7 +107,7 @@ function HomePage() {
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src="./img/icon-small/icon-small-02.svg"
+                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-02.svg`}
                   alt="icon-small-02.svg"
                 ></img>
               </div>
@@ -125,7 +122,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src="./img/small-banner-02-01.svg"
+            src={`${process.env.PUBLIC_URL}./img/small-banner-02-01.svg`}
             alt="small-banner-02"
           ></img>
         </div>
@@ -135,7 +132,7 @@ function HomePage() {
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src="./img/icon-small/icon-small-03.svg"
+                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-03.svg`}
                   alt="icon-small-02.svg"
                 ></img>
               </div>
@@ -150,7 +147,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src="./img/small-banner-03.svg"
+            src={`${process.env.PUBLIC_URL}./img/small-banner-03.svg`}
             alt="small-banner-02"
           ></img>
         </div>
@@ -160,7 +157,7 @@ function HomePage() {
             <div className="text-1">
               <div className="icon-1">
                 <img
-                  src="./img/icon-small/icon-small-04.svg"
+                  src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-04.svg`}
                   alt="icon-small-02.svg"
                 ></img>
               </div>
@@ -175,7 +172,7 @@ function HomePage() {
           </div>
           <img
             className="img2"
-            src="./img/small-banner-04-01.svg"
+            src={`${process.env.PUBLIC_URL}./img/small-banner-04-01.svg`}
             alt="small-banner-02"
           ></img>
         </div>
@@ -193,7 +190,7 @@ function HomePage() {
           <div className="box-9">
             <img
               className="img3 "
-              src="./img/small-banner-06.svg"
+              src={`${process.env.PUBLIC_URL}./img/small-banner-06.svg`}
               alt="small-banner-06"
             ></img>
             <div className="text-3">
@@ -223,7 +220,7 @@ function HomePage() {
           <div className="box-10">
             <img
               className="img4"
-              src="./img/small-banner-05.svg"
+              src={`${process.env.PUBLIC_URL}./img/small-banner-05.svg`}
               alt="small-banner-05"
             ></img>
             <div className="text-6">
@@ -287,7 +284,7 @@ function HomePage() {
               </div>
             </div>
             <img
-              src="./img/icon-small/icon-small-05.svg"
+              src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-05.svg`}
               alt="icon-small-05"
             ></img>
             <div className="box-13">
@@ -306,7 +303,7 @@ function HomePage() {
               </div>
             </div>
             <img
-              src="./img/icon-small/icon-small-05.svg"
+              src={`${process.env.PUBLIC_URL}./img/icon-small/icon-small-05.svg`}
               alt="icon-small-05"
             ></img>
             <div className="box-13">
